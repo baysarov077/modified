@@ -48,17 +48,8 @@ let longest = (str, str2) => {
 console.log(longest('intocode', 'developer'))
 // Задание 7
 
-let stringSlice = (str, num) => {
-    const arr = []
-    let strArr = str.split('')
-    for(i = 0; i < num; i++) {
-        arr.push(strArr[i])
-    }
-    if(arr.join('').length < num) {
-        return 'текст слишком короткий'
-    } else return arr.join('')
-    
-}
-console.log(stringSlice('wghkf', 3))
+let greeting = (string, num) => string.split('', num).join('') 
+console.log(greeting('da', 3))
 // Задание 8
-//Доработал)
+let greeting = (string, num) => string.length < num  ? 'текс слишком короткий' : string.split('', num).join('') 
+console.log(greeting('da', 3))
